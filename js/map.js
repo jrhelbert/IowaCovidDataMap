@@ -28,11 +28,12 @@ function resetMap() {
 
 //provide instructions for drawing the map
 function drawMap(err, corona) {
+  resetMap();
   //define layers
   baselayers = {};
 
-  var title = getTitle();
-  title.addTo(map);
+  // var title = getTitle();
+  // title.addTo(map);
  
   var defaultCategoryTitle = 'Confirmed Cases';
   categories = new Map();
