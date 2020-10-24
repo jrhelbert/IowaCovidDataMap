@@ -1,10 +1,10 @@
 function getSlider() {
-  var StartDate = new Date(2020, 2, 10);
+  var StartDate = new Date(2020, 2, 8);
   // Time
   var DaysSinceStart = Math.trunc((Today.getTime() - StartDate.getTime())  / (1000 * 3600 * 24)) + 1;
 
   var dataTime = d3.range(0, DaysSinceStart).map(function(d) {
-    return new Date(2020, 2, 10 + d);
+    return new Date(2020, 2, 8 + d);
   });
 
   var sliderTime = d3
